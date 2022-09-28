@@ -33,7 +33,7 @@ HTML前端<br />
 </p>
 <h2>工作经历</h2>
 <table class="imgtable1">
-  <tr>  <td><h3>大连同方软银&nbsp;</h3></td><td align="left">JAVA开发 (2016.11 ~ 2020.7)</td></tr>
+  <tr>  <td><h3>大连同方软银&nbsp;</h3></td><td align="left">JAVA开发 (2016.11 ~ 2020.7)</td>
   </table>
   <table class="imgtable2">
     <td><h3>金蝶国际&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td><td align="left">JAVA开发 (2021.2 ~ 2021.8)&nbsp;&nbsp;</td></tr>
