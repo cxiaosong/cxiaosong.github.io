@@ -44,7 +44,6 @@ HTML前端<br />
     <td align="left">JAVA开发 (2021.2 ~ 2021.8)&nbsp;&nbsp;</td>
     </tr>
 </table>
-  </p>
 <h2>小工具</h2>
 <a href="./作用：使用自动机识别论文中的错误的大小写以及空格问题.html">检查论文中错误的大小写和空格问题</a> <br />
 <div id="footer">
