@@ -46,6 +46,9 @@ HTML前端<br />
 </table>
 <div id="footer">
 <hr />
+</p>
+<h2>小工具</h2>
+<a href="./作用：使用自动机识别论文中的错误的大小写以及空格问题.html">检查论文中错误的大小写和空格问题</a> <br />
 <div id="footer-text" align="right">
 Page generated 2022-09-28, by Xiaosong Chang.
 </div>
