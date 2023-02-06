@@ -46,6 +46,7 @@ HTML前端<br />
 </table>
 <h2>小工具</h2>
 <a href="./作用：使用自动机识别论文中的错误的大小写以及空格问题.html">检查论文中错误的大小写和空格问题</a> <br />
+<a href="./DOS命令备份电脑关键位置到U盘.html">DOS命令备份电脑关键位置到U盘</a> <br />
 <div id="footer">
 <hr />
 <div id="footer-text" align="right">
