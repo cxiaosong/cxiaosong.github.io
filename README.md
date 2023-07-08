@@ -58,4 +58,7 @@ Page generated 2022-09-28, by Xiaosong Chang.
 </div>
 </div>
 </body>
+<script type="text/javascript">
+document.getElementsByTagName('h1')[0].style.display = 'none'
+</script>
 </html>
