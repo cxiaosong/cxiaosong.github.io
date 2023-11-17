@@ -49,6 +49,9 @@ python<br />
 <a href="./作用：使用自动机识别论文中的错误的大小写以及空格问题.html">检查论文中错误的大小写和空格问题</a> <br />
 <a href="./DOS命令备份电脑关键位置到U盘.html">DOS命令备份电脑关键位置到U盘</a> <br />
   <a href="./作用：根据关键字检索文件内容，输出文件列表.html">根据关键字检索文件内容，输出文件列表</a> <br />
+<h2>开源仓库</h2>
+<a href="https://github.com/cxiaosong/RefactorMinerDemo">使用RefactorMiner挖掘历史修改记录中的提取方法重构，抽取出修改前后的方法</a> <br />
+<a href="https://github.com/cxiaosong/DeepLog">DeepLog1.0 基于深度学习的日志推荐</a> <br />
   <h2>参与过的论文</h2>
   Yang Zhang, <strong>Xiaosong Chang</strong>, Lining Fang, Yifan Lu. DeepLog: Deep-Learning-Based Log Recommendation. Proceedings of 45th International Conference on Software Engineering (ICSE - DEMO Track). May 17-20, 2023, Melbourne, Austrilia.
 <div id="footer">
