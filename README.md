@@ -23,7 +23,7 @@
     <h2>爱好</h2>
 <p>民谣 毽子 三国杀</p>
   <h2>研究方向</h2>
-<p><img src="interest.png" alt="alt text" width="500px" />&nbsp;</td></p>
+<p><img src="interest.png" alt="alt text" width="500px" />&nbsp;</p>
 
  <h2>知识范畴</h2>
 <p>JAVA<br />
