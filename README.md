@@ -26,12 +26,12 @@
 <p><img src="interest.png" alt="alt text" width="500px" />&nbsp;</p>
 
  <h2>知识范畴</h2>
-<p>JAVA<br />
+<p>Java<br />
+Python<br />
 SSH框架<br />
 Spring微服务<br />
 ORCALE、MYSQL<br />
 HTML前端<br />
-python<br />
 </p>
 <h2>工作经历</h2>
 <table class="imgtable1">
