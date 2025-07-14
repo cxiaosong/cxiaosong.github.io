@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +6,10 @@
     <title>Xiaosong Chang - Computer Science Researcher</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        h1 {
+          display: none;
+        }
+
         :root {
             --primary-color: #4a6fa5;
             --secondary-color: #6b8cae;
