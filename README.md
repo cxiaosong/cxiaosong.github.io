@@ -307,7 +307,7 @@
             <li><a href="https://github.com/cxiaosong/DeepLog">DeepLog 1.0: Deep Learning-based Log Recommendation System</a></li>
         </ul>
         
-        <h2>Publications</h2>
+        <h2>Research Involved</h2>
         <div class="papers-list">
             <p>Yang Zhang, <strong>Xiaosong Chang</strong>, Lining Fang, Yifan Lu. (2023). "DeepLog: Deep-Learning-Based Log Recommendation." <em>Proceedings of 45th International Conference on Software Engineering (ICSE - DEMO Track)</em>, May 17-20, 2023, Melbourne, Australia.</p>
         </div>
