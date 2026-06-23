@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreezeMal · 极简摘要</title>
+    <style>
+        /* 极简 · 干净 · 学术风格 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding: 1.5rem;
+            line-height: 1.5;
+            color: #1e1e1e;
+        }
+
+        .paper-card {
+            max-width: 920px;
+            width: 100%;
+            background: white;
+            padding: 2.8rem 3rem;
+            border-radius: 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eaeef2;
+            transition: all 0.1s ease;
+        }
+
+        /* 标题区 */
+        .title {
+            font-size: 2.1rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.9rem;
+            color: #0a0a0a;
+            word-break: break-word;
+        }
+
+        .authors {
+            font-size: 1rem;
+            color: #1e1e1e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.1rem 0.3rem;
+        }
+
+        .authors .author {
+            display: inline-block;
+        }
+
+        .authors sup {
+            font-size: 0.7rem;
+            color: #555;
+            top: -0.3em;
+        }
+
+        .affiliations {
+            font-size: 0.82rem;
+            color: #3a3f44;
+            background: #f3f6f9;
+            padding: 0.6rem 0.9rem;
+            margin: 0.5rem 0 0.9rem 0;
+            border-radius: 6px;
+            line-height: 1.6;
+            border-left: 3px solid #b0c4d9;
+        }
+
+        .correspondence {
+            font-size: 0.82rem;
+            color: #2c3e50;
+            margin: 0.1rem 0 0.5rem 0;
+            background: #f9fbfd;
+            padding: 0.2rem 0;
+        }
+
+        .correspondence a {
+            color: #0366d6;
+            text-decoration: none;
+            border-bottom: 1px dotted #b6d0e8;
+        }
+
+        .correspondence a:hover {
+            border-bottom: 1px solid #0366d6;
+        }
+
+        .meta-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 1.5rem;
+            font-size: 0.8rem;
+            color: #3d4a56;
+            margin: 0.5rem 0 0.8rem 0;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid #eef2f6;
+            padding-bottom: 0.6rem;
+        }
+
+        .meta-grid span {
+            white-space: nowrap;
+        }
+
+        .keywords {
+            font-size: 0.85rem;
+            color: #1f2a36;
+            background: #f0f4fa;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.2rem 0 1rem 0;
+            font-weight: 420;
+        }
+
+        .keywords strong {
+            font-weight: 550;
+            color: #0b1e2c;
+        }
+
+        /* 摘要正文 */
+        .abstract {
+            margin: 0.8rem 0 1.4rem 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #1e262e;
+            text-align: justify;
+            hyphens: auto;
+            border-left: 2px solid #dce3ec;
+            padding-left: 1.2rem;
+        }
+
+        .abstract::before {
+            content: "ABSTRACT";
+            display: block;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.03em;
+            color: #3a5770;
+            margin-bottom: 0.15rem;
+        }
+
+        /* 复现声明 — 极简，低调 */
+        .replication-note {
+            margin-top: 1.6rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid #e5ebf0;
+            font-size: 0.85rem;
+            color: #2c475c;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            letter-spacing: 0.01em;
+        }
+
+        .replication-note .icon {
+            font-size: 1.1rem;
+            opacity: 0.7;
+        }
+
+        .replication-note .text {
+            background: #f5f8fc;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 400;
+            color: #1d3a52;
+        }
+
+        /* 极简微调 */
+        .separator {
+            display: none;
+        }
+
+        /* 小屏适配 */
+        @media (max-width: 600px) {
+            .paper-card {
+                padding: 1.8rem 1.4rem;
+            }
+            .title {
+                font-size: 1.6rem;
+            }
+            .authors {
+                font-size: 0.9rem;
+            }
+            .affiliations {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.7rem;
+            }
+            .abstract {
+                font-size: 0.9rem;
+                padding-left: 0.8rem;
+            }
+            .meta-grid {
+                gap: 0.2rem 0.8rem;
+                font-size: 0.75rem;
+            }
+            .replication-note {
+                font-size: 0.8rem;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media print {
+            body { background: white; }
+            .paper-card { border: none; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-card">
+        <!-- 标题 -->
+        <h1 class="title">FreezeMal: Unknown-Family Android Malware Detection Based on Multi-Task Learning</h1>
+
+        <!-- 作者（带序号） -->
+        <div class="authors">
+            <span class="author">Xiaosong Chang<sup>1,2</sup></span><span class="author">, </span>
+            <span class="author">Jinfu Chen<sup>1,2</sup></span><span class="author">, </span>
+            <span class="author">Saihua Cai<sup>1,2</sup></span><span class="author">, </span>
+            <span class="author">Wenjie Gu<sup>3</sup></span><span class="author">, </span>
+            <span class="author">Sheng Wei<sup>1,2</sup></span>
+        </div>
+
+        <!-- 单位 -->
+        <div class="affiliations">
+            <sup>1</sup>School of Computer Science and Communication Engineering, Jiangsu University, Jiangsu, China &nbsp;|&nbsp;
+            <sup>2</sup>Jiangsu Key Laboratory of Security Technology for Industrial Cyberspace, Jiangsu University, Jiangsu, China &nbsp;|&nbsp;
+            <sup>3</sup>Faculty of Computing and Data Science, The Hong Kong Polytechnic University, Hong Kong, China
+        </div>
+
+        <div class="meta-grid">
+            <span><strong>Received:</strong> —</span>
+            <span><strong>Revised:</strong> —</span>
+            <span><strong>Accepted:</strong> —</span>
+            <span><strong>Academic Editor:</strong> —</span>
+            <span><strong>Guest Editor:</strong> —</span>
+        </div>
+
+        <!-- 关键词 -->
+        <div class="keywords">
+            <strong>Keywords:</strong> Android malware detection · unknown malware families · continual learning · incremental learning · multi-task learning
+        </div>
+
+        <!-- 摘要 -->
+        <div class="abstract">
+            Machine learning methods are widely accepted as a panacea for Android malware detection. However, because existing methods overlook the relationships among malware families, they have an insufficient ability to detect unknown malware families. In this paper, we propose a multi-task learning (MTL) scheme to explicitly capture inter-family relationships and improve the generalization of malware detection. Specifically, we first construct a malicious behavior space via a multi-family detection task. Then, a clustering-based approach is applied to identify valuable samples for detection rule updating. Finally, a lightweight active learning strategy is introduced to dynamically optimize the detection strategy. Extensive experiments demonstrate that our method can efficiently detect unknown malware families and significantly reduce the computational overhead in both the training and detection phases. Our method achieves an average <em>F</em><sub>1</sub> of 98.18% on the CICMalDroid2020 and VirusTotal datasets. Furthermore, it improves the <em>F</em><sub>1</sub> to 85.13% and 90.90%, respectively, in unknown malware family detection and concept drift settings, demonstrating its efficiency.
+        </div>
+
+        <!-- 复现内容稍后上传 · 极简声明 -->
+        <div class="replication-note">
+            <span class="icon">↗</span>
+            <span class="text">The implication artifacts will be uploaded at a later time.</span>
+            <span style="margin-left:auto; font-size:0.7rem; color:#5a6f7e;">freeze · mal</span>
+        </div>
+
+        <!-- 极简脚标 （无额外装饰） -->
+        <div style="margin-top:1rem; font-size:0.6rem; color:#9aaebf; text-align:right; border-top:1px solid #ecf0f4; padding-top:0.5rem; letter-spacing:0.02em;">
+            pre-print · ICSE 2027
+        </div>
+    </div>
+</body>
+</html>
